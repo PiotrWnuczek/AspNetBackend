@@ -25,5 +25,12 @@
         {
             return this.items.GetItems();
         }
+
+        [HttpGet]
+        [Route("GetItem/{id}")]
+        public List<Item> GetItem(string id)
+        {
+            return this.items.GetItem(id);
+        }
     }
 }

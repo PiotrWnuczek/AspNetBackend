@@ -25,5 +25,13 @@
                 return items;
             }
         }
+
+        public List<Item> GetItem(string id)
+        {
+            lock (items)
+            {
+                return items.Where(item => item.id == id).ToList();
+            }
+        }
     }
 }

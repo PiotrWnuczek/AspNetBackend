@@ -33,5 +33,16 @@
                 return items.Where(item => item.id == id).ToList();
             }
         }
+
+        public List<Item> AddItem(Item item)
+        {
+            Writer writer = new();
+            lock (items)
+            {
+                items.Add(item);
+                Writer.WriteJson(filename, items);
+                return items;
+            }
+        }
     }
 }

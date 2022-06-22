@@ -32,5 +32,12 @@
         {
             return this.items.GetItem(id);
         }
+
+        [HttpPost]
+        [Route("AddItem")]
+        public List<Item> AddItem([FromBody] Item item)
+        {
+            return this.items.AddItem(item);
+        }
     }
 }

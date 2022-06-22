@@ -7,5 +7,6 @@ namespace Server.Logic
     {
         public List<Item> GetItems();
         public List<Item> GetItem(string id);
+        public List<Item> AddItem(Item item);
     }
 }

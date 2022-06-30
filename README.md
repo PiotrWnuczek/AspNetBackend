@@ -1,9 +1,8 @@
-## C# .NET Backend Template
+# C# .NET Backend Template
 
-#### Generic template of backend in C# .NET. It is the basis for creating more advanced software. The template uses REST pattern.
+### Generic template of backend in C# .NET. It is the basis for creating more advanced software. The template uses REST pattern.
 
-#### Solution includes three projects:
-
+### Solution includes projects:
 - Model - data structure
 - Logic - main methods
 - Rest - REST controller
